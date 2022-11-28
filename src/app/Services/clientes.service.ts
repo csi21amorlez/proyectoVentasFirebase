@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ClientesService {
-  constructor(private fires: Firestore) {}s
+  constructor(private fires: Firestore) {}
 
   addCliente(cliente: Cliente) {
     const REF = collection(this.fires, 'Clientes');
