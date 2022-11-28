@@ -25,10 +25,4 @@ export class ArticulosService {
     const ClientDocRef = doc(this.fires, `Articulos/${articulo.id}`);
     return deleteDoc(ClientDocRef);
   }
-
-  updateArticulo(articulo: Articulo) {
-    const ClientDocRef = doc(this.fires, `Articulos/${articulo.id}`);
-    // return updateDoc();
-  }
-
 }
