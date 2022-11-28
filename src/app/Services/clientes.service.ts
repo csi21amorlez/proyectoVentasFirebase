@@ -23,10 +23,5 @@ export class ClientesService {
   deleteCliente(cliente: Cliente) {
     const ClientDocRef = doc(this.fires, `Clientes/${cliente.id}`);
     return deleteDoc(ClientDocRef);
-  }
-
-  updateCliente(cliente: Cliente) {
-    const ClientDocRef = doc(this.fires, `Clientes/${cliente.id}`);
-    // return updateDoc();
-  }
+  }  
 }
